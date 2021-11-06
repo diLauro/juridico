@@ -1,10 +1,22 @@
 import React from "react";
+import { Grid } from "@mui/material";
+import NavBar from "./components/NavBar";
+import SideBar from "./components/SideBar";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      Config
-    </div>
+    <>
+      <NavBar />
+
+      <Grid container spacing={2} alignItems="center">
+        <SideBar />
+        <Grid item xs={12} md={10}>
+          
+        </Grid>
+      </Grid>
+
+    </>
   );
 }
 
